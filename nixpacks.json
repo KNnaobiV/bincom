@@ -1,0 +1,11 @@
+{
+    "phases": {
+        "cmds": ["pip install -r requirements.txt"]
+    },
+    "build": {
+        "cmds": []
+    },
+    "start": {
+        "cmd": "gunicorn src.wsgi:application --bind 0.0.0.0:8000"
+    }
+}
